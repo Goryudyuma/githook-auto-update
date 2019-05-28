@@ -5,4 +5,4 @@ if [[ -f ./post-merge-local ]]; then
   ./post-merge-local
 fi
 
-echo "master!"
+echo "hoge!"
