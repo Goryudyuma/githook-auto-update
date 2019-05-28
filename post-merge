@@ -1,0 +1,6 @@
+#!/bin/bash
+
+make --directory $(git rev-parse --show-toplevel) update-hooks > /dev/null
+if [[ -f ./post-merge-local ]]; then
+  ./post-merge-local
+fi
